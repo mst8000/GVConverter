@@ -1,0 +1,2 @@
+# GVConverter
+Gravpvizを使用した，dotスクリプトから各種グラフへの出力を，GUIで簡単にできるようにします
