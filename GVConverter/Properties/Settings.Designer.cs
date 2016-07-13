@@ -58,5 +58,41 @@ namespace GVConverter.Properties {
                 this["outputFormat"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool addDotFileOnly {
+            get {
+                return ((bool)(this["addDotFileOnly"]));
+            }
+            set {
+                this["addDotFileOnly"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool addRecursively {
+            get {
+                return ((bool)(this["addRecursively"]));
+            }
+            set {
+                this["addRecursively"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool excludeDuplicate {
+            get {
+                return ((bool)(this["excludeDuplicate"]));
+            }
+            set {
+                this["excludeDuplicate"] = value;
+            }
+        }
     }
 }

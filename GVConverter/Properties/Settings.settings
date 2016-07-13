@@ -11,5 +11,14 @@
     <Setting Name="outputFormat" Type="System.String" Scope="User">
       <Value Profile="(Default)">pdf</Value>
     </Setting>
+    <Setting Name="addDotFileOnly" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="addRecursively" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="excludeDuplicate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

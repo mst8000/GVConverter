@@ -34,6 +34,9 @@
             this.tbxConverterPath = new System.Windows.Forms.TextBox();
             this.btnConvert = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbxExcludeDuplicate = new System.Windows.Forms.CheckBox();
+            this.cbxAddRecursively = new System.Windows.Forms.CheckBox();
+            this.cbxAddDotFileOnly = new System.Windows.Forms.CheckBox();
             this.cbOutputFormat = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cbLayoutEngine = new System.Windows.Forms.ComboBox();
@@ -98,6 +101,9 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.cbxExcludeDuplicate);
+            this.groupBox1.Controls.Add(this.cbxAddRecursively);
+            this.groupBox1.Controls.Add(this.cbxAddDotFileOnly);
             this.groupBox1.Controls.Add(this.cbOutputFormat);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.cbLayoutEngine);
@@ -113,6 +119,36 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "設定";
+            // 
+            // cbxExcludeDuplicate
+            // 
+            this.cbxExcludeDuplicate.AutoSize = true;
+            this.cbxExcludeDuplicate.Location = new System.Drawing.Point(418, 135);
+            this.cbxExcludeDuplicate.Name = "cbxExcludeDuplicate";
+            this.cbxExcludeDuplicate.Size = new System.Drawing.Size(135, 19);
+            this.cbxExcludeDuplicate.TabIndex = 7;
+            this.cbxExcludeDuplicate.Text = "重複するファイルを除外";
+            this.cbxExcludeDuplicate.UseVisualStyleBackColor = true;
+            // 
+            // cbxAddRecursively
+            // 
+            this.cbxAddRecursively.AutoSize = true;
+            this.cbxAddRecursively.Location = new System.Drawing.Point(418, 111);
+            this.cbxAddRecursively.Name = "cbxAddRecursively";
+            this.cbxAddRecursively.Size = new System.Drawing.Size(206, 19);
+            this.cbxAddRecursively.TabIndex = 6;
+            this.cbxAddRecursively.Text = "フォルダ内の全ファイルを再帰的に追加";
+            this.cbxAddRecursively.UseVisualStyleBackColor = true;
+            // 
+            // cbxAddDotFileOnly
+            // 
+            this.cbxAddDotFileOnly.AutoSize = true;
+            this.cbxAddDotFileOnly.Location = new System.Drawing.Point(418, 87);
+            this.cbxAddDotFileOnly.Name = "cbxAddDotFileOnly";
+            this.cbxAddDotFileOnly.Size = new System.Drawing.Size(122, 19);
+            this.cbxAddDotFileOnly.TabIndex = 5;
+            this.cbxAddDotFileOnly.Text = "dotファイルのみ追加";
+            this.cbxAddDotFileOnly.UseVisualStyleBackColor = true;
             // 
             // cbOutputFormat
             // 
@@ -323,6 +359,9 @@
         private System.Windows.Forms.OpenFileDialog ofdConverterSelectDialog;
         private System.Windows.Forms.ContextMenuStrip cmsInputFiles;
         private System.Windows.Forms.ToolStripMenuItem tsmiDeleteSelected;
+        private System.Windows.Forms.CheckBox cbxAddRecursively;
+        private System.Windows.Forms.CheckBox cbxAddDotFileOnly;
+        private System.Windows.Forms.CheckBox cbxExcludeDuplicate;
     }
 }
 
