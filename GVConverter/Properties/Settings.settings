@@ -9,7 +9,7 @@
       <Value Profile="(Default)">nop</Value>
     </Setting>
     <Setting Name="outputFormat" Type="System.String" Scope="User">
-      <Value Profile="(Default)">pdf</Value>
+      <Value Profile="(Default)">png</Value>
     </Setting>
     <Setting Name="addDotFileOnly" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
