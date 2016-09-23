@@ -49,7 +49,7 @@ namespace GVConverter.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("png")]
+        [global::System.Configuration.DefaultSettingValueAttribute("pdf")]
         public string outputFormat {
             get {
                 return ((string)(this["outputFormat"]));
