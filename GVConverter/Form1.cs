@@ -206,7 +206,7 @@ namespace GVConverter
             cbOutputFormat.Enabled = false;
             cmsInputFiles.Enabled = false;
 
-            //変換開始ボタンの
+            //変換開始ボタンの表示切替
             btnConvert.Text = "キャンセル";
             isWorking = true;
             cancelRequest = false;
@@ -259,9 +259,8 @@ namespace GVConverter
             //ProgressBar初期化
             pbConvertProgress.Value = 0;
 
+            //変換開始ボタンの表示切替
             btnConvert.Text = "変換実行";
-
-            //変換開始ボタンを有効化
             btnConvert.Enabled = true;
             btnClear.Enabled = true;
             btnOpenConverterSelectDialog.Enabled = true;

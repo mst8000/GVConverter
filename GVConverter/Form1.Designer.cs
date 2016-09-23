@@ -125,9 +125,9 @@
             this.cbxExcludeDuplicate.AutoSize = true;
             this.cbxExcludeDuplicate.Location = new System.Drawing.Point(418, 135);
             this.cbxExcludeDuplicate.Name = "cbxExcludeDuplicate";
-            this.cbxExcludeDuplicate.Size = new System.Drawing.Size(135, 19);
+            this.cbxExcludeDuplicate.Size = new System.Drawing.Size(169, 19);
             this.cbxExcludeDuplicate.TabIndex = 7;
-            this.cbxExcludeDuplicate.Text = "重複するファイルを除外";
+            this.cbxExcludeDuplicate.Text = "出力が重複するファイルを除外";
             this.cbxExcludeDuplicate.UseVisualStyleBackColor = true;
             // 
             // cbxAddRecursively
@@ -145,9 +145,9 @@
             this.cbxAddDotFileOnly.AutoSize = true;
             this.cbxAddDotFileOnly.Location = new System.Drawing.Point(418, 87);
             this.cbxAddDotFileOnly.Name = "cbxAddDotFileOnly";
-            this.cbxAddDotFileOnly.Size = new System.Drawing.Size(122, 19);
+            this.cbxAddDotFileOnly.Size = new System.Drawing.Size(131, 19);
             this.cbxAddDotFileOnly.TabIndex = 5;
-            this.cbxAddDotFileOnly.Text = "dotファイルのみ追加";
+            this.cbxAddDotFileOnly.Text = "dotファイルのみを追加";
             this.cbxAddDotFileOnly.UseVisualStyleBackColor = true;
             // 
             // cbOutputFormat
@@ -254,7 +254,7 @@
             this.groupBox2.Size = new System.Drawing.Size(710, 468);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "変換ファイル";
+            this.groupBox2.Text = "変換ファイル（ファイル・フォルダをドロップして追加）";
             // 
             // lbInputFiles
             // 
@@ -329,7 +329,7 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MinimumSize = new System.Drawing.Size(450, 350);
+            this.MinimumSize = new System.Drawing.Size(670, 350);
             this.Name = "frmMain";
             this.Text = "GVConverter";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
