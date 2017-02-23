@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GVConverter", "GVConverter\GVConverter.csproj", "{5CD98E87-FEB1-48F2-92C0-AE6A3F4AC27A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GVConverter2", "GVConverter2\GVConverter2.csproj", "{21B514EC-1AAA-4A3F-9F53-E8429D3294ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,17 +17,24 @@ Global
 		{5CD98E87-FEB1-48F2-92C0-AE6A3F4AC27A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CD98E87-FEB1-48F2-92C0-AE6A3F4AC27A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CD98E87-FEB1-48F2-92C0-AE6A3F4AC27A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21B514EC-1AAA-4A3F-9F53-E8429D3294ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21B514EC-1AAA-4A3F-9F53-E8429D3294ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21B514EC-1AAA-4A3F-9F53-E8429D3294ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21B514EC-1AAA-4A3F-9F53-E8429D3294ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
+		SccNumberOfProjects = 3
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://mst8000.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
 		SccProjectUniqueName1 = GVConverter\\GVConverter.csproj
 		SccProjectName1 = GVConverter
 		SccLocalPath1 = GVConverter
+		SccProjectUniqueName2 = GVConverter2\\GVConverter2.csproj
+		SccProjectName2 = GVConverter2
+		SccLocalPath2 = GVConverter2
 	EndGlobalSection
 EndGlobal

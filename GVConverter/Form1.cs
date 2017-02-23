@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.IO.Path;
 
 namespace GVConverter
 {
@@ -59,12 +60,12 @@ namespace GVConverter
                 foreach (var filePath in allFiles)
                 {
                     //指定されていればdotファイル以外であればスキップ
-                    if ((cbxAddDotFileOnly.Checked) && (Path.GetExtension(filePath) != ".dot")) continue;
+                    if ((cbxAddDotFileOnly.Checked) && (GetExtension(filePath) != ".dot")) continue;
 
                     //指定されていれば出力先に重複するファイルが存在していればスキップ
                     if (cbxExcludeDuplicate.Checked)
                     {
-                        if (File.Exists(Path.Combine(Path.GetDirectoryName(filePath), Path.GetFileNameWithoutExtension(filePath) + "." + cbOutputFormat.Text))) continue;
+                        if (File.Exists(Combine(GetDirectoryName(filePath), GetFileNameWithoutExtension(filePath) + "." + cbOutputFormat.Text))) continue;
                     }
 
                     //lbInputFiles内の重複しているアイテムとディレクトリは除外しながらlbInputFilesに追加
@@ -82,12 +83,12 @@ namespace GVConverter
                 foreach (var filePath in (string[])e.Data.GetData(DataFormats.FileDrop))
                 {
                     //指定されていればdotファイル以外であればスキップ
-                    if ((cbxAddDotFileOnly.Checked) && (Path.GetExtension(filePath) != ".dot")) continue;
+                    if ((cbxAddDotFileOnly.Checked) && (GetExtension(filePath) != ".dot")) continue;
 
                     //指定されていれば出力先に重複するファイルが存在していればスキップ
                     if (cbxExcludeDuplicate.Checked)
                     {
-                        if (File.Exists(Path.Combine(Path.GetDirectoryName(filePath), Path.GetFileNameWithoutExtension(filePath) + "." + cbOutputFormat.Text))) continue;
+                        if (File.Exists(Combine(GetDirectoryName(filePath), GetFileNameWithoutExtension(filePath) + "." + cbOutputFormat.Text))) continue;
                     }
 
                     //lbInputFiles内の重複しているアイテムとディレクトリは除外しながらlbInputFilesに追加
@@ -227,7 +228,7 @@ namespace GVConverter
                 try
                 {
                     //引数生成
-                    string outpath = Path.Combine(Path.GetDirectoryName(lbInputFiles.Items[i].ToString()), Path.GetFileNameWithoutExtension(lbInputFiles.Items[i].ToString()) + "." + cbOutputFormat.Text);
+                    string outpath = Combine(GetDirectoryName(lbInputFiles.Items[i].ToString()), GetFileNameWithoutExtension(lbInputFiles.Items[i].ToString()) + "." + cbOutputFormat.Text);
                     string argstr = $"-K {cbLayoutEngine.Text} -T {cbOutputFormat.Text} \"{lbInputFiles.Items[i]}\" -o \"{outpath}\"";
 
                     //実行
